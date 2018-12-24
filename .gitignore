@@ -1,0 +1,4 @@
+# Ignore git cloned repos by the .sh
+termite/
+vte.ng/
+

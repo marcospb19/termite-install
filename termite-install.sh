@@ -1,22 +1,31 @@
 #!/usr/bin/env sh
 
+# Print the commands as the program runs
+set -x
+
+# Stops the script if any step fail
+set -e
+
 sudo apt-get install -y \
-	git \
 	g++ \
-	libgtk-3-dev \
-	gtk-doc-tools \
 	gnutls-bin \
-	valac \
+	gtk-doc-tools \
 	intltool \
-	libpcre2-dev \
-	libglib3.0-cil-dev \
-	libgnutls28-dev \
+	git \
 	libgirepository1.0-dev \
+	libglib3.0-cil-dev \
 	libxml2-utils \
-	gperf
-	
+	libpcre2-dev \
+	libgnutls28-dev \
+	gperf \
+	libgtk-3-dev \
+	libtool \
+	valac
+
+set +e
 git clone --recursive https://github.com/thestinger/termite.git
 git clone https://github.com/thestinger/vte-ng.git
+set -e
 
 echo export LIBRARY_PATH="/usr/include/gtk-3.0:$LIBRARY_PATH"
 cd vte-ng && ./autogen.sh && make && sudo make install
@@ -28,3 +37,4 @@ sudo mkdir -p /lib/terminfo/x; sudo ln -s \
 
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/termite 60
 
+set +x
