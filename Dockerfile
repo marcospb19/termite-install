@@ -3,8 +3,8 @@ FROM	ubuntu:16.04
 ARG	http_proxy
 ARG	https_proxy
 
-RUN	apt-get update && \
-	apt-get install -y \
+RUN	apt update && \
+	apt install -y \
 	build-essential \
 	git \
 	g++ \
