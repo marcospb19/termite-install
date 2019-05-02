@@ -1,8 +1,8 @@
 ## termite-install
 
 CAREFULL!:
-> The script might break other terminal-emulators, like gnome-terminal, i recomend you unninstall gnome-terminal before installing termite, and reinstall it later (someday i will make more tests and update this readme...) \
-> Also, i don't really know how to unninstall termite after the script runs............
+> The script might break other terminal-emulators, like gnome-terminal \
+> Also, i don't really know how to unninstall termite after the script runs (But i accept any pull requests)...
 
 This is a script for installing termite terminal emulator on debian based systems
 
@@ -28,6 +28,6 @@ Unfortunately, termite still not installable from apt (yet, and this is the reas
 
 This script was tested on:
 
-> linux mint cinnamon 19-19.1 \
-> ubuntu 16.04-18.10 \
+> linux mint cinnamon 19 - 19.1 \
+> ubuntu 16.04 - 18.10 \
 > debian 9
