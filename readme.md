@@ -8,7 +8,7 @@ CAREFULL!:
 
 
 Termite on `linux mint` (you may want to zoom ~150%):
-![Termite Image](https://github.com/marcospb19/loadingNewYear/blob/master/images/installationAndUsage.png)
+![Termite Image](https://raw.githubusercontent.com/marcospb19/LoadingNewYear/master/images/installation_and_usage.png)
 
 More about termite:
 
@@ -32,3 +32,10 @@ Script tested on:
 > linux mint cinnamon 19 - 19.1 \
 > ubuntu 16.04 - 18.10          \
 > debian 9
+
+### This is a fork
+[Corwind](https://github.com/corwind) is the guy who wrote the original script,
+but (imo) it needed to be improved in some ways, also, i think that he supposed
+to use this it with docker (maybe this way you could prevent it from breaking
+gnome-terminal) but i don't understand about docker, if you want to check it
+out, the link is [here](https://github.com/corwind).
