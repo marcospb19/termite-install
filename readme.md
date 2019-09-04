@@ -31,6 +31,4 @@ Termite on `Linux Mint` *(you may want to zoom)*:
 - `Debian 9`
 
 # This repo is a fork
-The [original script](https://github.com/Corwind/termite-install) was made by [Corwind](https://github.com/corwind). But he abandoned it by the time I was interested, simple `issues` were pending... So i made this, removed the Dockerfile, as I don't understand anything about Docker, fixed dependency issues and added some checks to the script.
-
-You know what? maybe the Dockerfile prevented `termite` from breaking `gnome-terminal`, I'll never know.
+The [original script](https://github.com/Corwind/termite-install) was made by [Corwind](https://github.com/corwind). But he abandoned it by the time I was interested. So i made this fork to maintain it.
