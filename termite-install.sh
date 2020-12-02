@@ -65,8 +65,11 @@ if [[ -d "vte-ng" && -d "vte-ng/.git" ]]; then
 	echo "Vte-ng already cloned, skipping"
 
 else
-	echo "git clone https://github.com/thestinger/vte-ng"
-	git clone https://github.com/thestinger/vte-ng
+	if grep -s -q 'bullseye' /etc/debian_version; then
+		branch='-b 0.56.2-ng'
+	fi
+	echo "git clone https://github.com/thestinger/vte-ng $branch"
+	git clone https://github.com/thestinger/vte-ng $branch
 fi
 
 echo export LIBRARY_PATH="/usr/include/gtk-3.0:$LIBRARY_PATH"
